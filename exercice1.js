@@ -24,8 +24,10 @@ document.getElementById("afficheRandom").addEventListener("click", function (){
 });
 
 document.getElementById("allTab").addEventListener("click", function (){
-    document.getElementById("all").innerHTML= Tab;
 
+    for (var i=0; i<Tab.length; i++) {
+        document.getElementById("all").innerHTML += i+ "-" + Tab[i] + "_";
+    }
 });
 
 
